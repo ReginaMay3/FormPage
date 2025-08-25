@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form: Petshop </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title"> Pet Shop Survey Form </h1>
+    <p id="description"> Hello! This will be really helpful for us, thank you. </p>
+    <form id="survey-form">
+    <label id="name-label" > Name
+    <input id="name" type="text" required placeholder="Enter your full name" />
+    </label>
+
+    <label id="email-label"> Email
+    <input id="email" type="email" required placeholder="Enter a valid email" />
+    </label>
+
+    <label id="number-label" class="question"> How many times have you visited us? (if you have)
+    <input id="number" type="number" min="1" max="10" placeholder="1-10" />
+    </label>
+
+    <label for="dropdown" class="question">What's your type of pet?
+      <select id="dropdown">
+       <option>(select one)</option>
+       <option>Cats</option>
+       <option>Dogs</option>
+       <option>Fish</option>
+       <option>Other</option>
+      </select>
+    </label>
+
+    <label class="question">How much would you pay for a toy?</label>
+    <label for="cheap"><input type="radio" name="toys" id="cheap" class="inline" value="cheap" checked />$100-$200
+    </label>
+    <label for="expensive"><input type="radio" name="toys" id="expensive" class="inline" value="expensive" />$300-$600
+    </label>
+
+    <label class="question">Which toys do you buy for your pets? (pick as many as you want)</label>
+      <label for="rasc"><input type="checkbox" class="inline" id="rasc" value="rasc" />Rascadores
+      </label>
+      <label for="carnaza"><input type="checkbox" class="inline" id="carnaza" value="carnaza" />Carnaza
+      </label>
+      <label for="lasers"><input type="checkbox" class="inline" id="lasers" value="lasers" />Lasers
+      </label>
+      <label for="runners"><input type="checkbox" class="inline" id="runners" value="runners" />Runners
+      </label>
+
+    <label for="other" class="question">Any comments or suggestions?
+        <textarea id="other" placeholder="Add your opinion!"></textarea>
+    </label>
+    <button id="submit">Submit</button>
+    </form>
+
+  </body>
+
+</html>
